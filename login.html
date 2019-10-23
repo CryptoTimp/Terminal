@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>Landing</title>
+        <center>
+        <img src="1.png">
+    </head>
+    <body>
+        <div class="mycube">
+            <div class="cube">
+                <div class="a"></div>
+                <div class="b"></div>
+                <div class="c"></div>
+                <div class="d"></div>
+                <div class="e"></div>
+                <div class="f"></div>
+                <div class="cube2">
+                    <div class="g"></div>
+                    <div class="h"></div>
+                    <div class="i"></div>
+                    <div class="j"></div>
+                    <div class="k"></div>
+                    <div class="l"></div>
+                    <div class="cube3">
+                        <div class="m"></div>
+                        <div class="n"
+                       ></div>
+                        <div class="o"></div>
+                        <div class="p"></div>
+                        <div class="q"></div>
+                        <div class="r"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+body {background-color: gray;}
+
+html
+{
+    display: table;
+    margin: auto;
+    height: 100%;
+}
+body
+{
+    display: table-cell;
+    vertical-align: auto;
+}
+.mycube
+{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+.cube
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transform: rotateY(-42deg) rotateZ(20deg) rotateX(-20deg) translateZ(0px);
+    transform: rotateY(-42deg) rotateZ(20deg) rotateX(-20deg) translateZ(0px);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-animation: cube 10s linear infinite;
+    animation: cube 15s linear infinite;
+}
+.cube div
+{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    box-shadow: 0 0 0 1px #000 ;
+    border-radius: 100px;
+}
+.a
+{
+    -webkit-transform: rotateY(0) translateZ(100px);
+    transform: rotateY(0) translateZ(100px);
+    background-color: rgba(110, 146, 198, 0.6);
+}
+.b
+{
+    -webkit-transform: rotateY(180deg) translateZ(100px);
+    transform: rotateY(180deg) translateZ(100px);
+    background-color: rgba(110, 146, 198 ,0.6);
+}
+.c
+{
+    -webkit-transform: rotateY(90deg) translateZ(100px);
+    transform: rotateY(90deg) translateZ(100px);
+    background-color: rgba(110, 146, 198,0.6);
+}
+.d
+{
+    -webkit-transform: rotateY(-90deg) translateZ(100px);
+    transform: rotateY(-90deg) translateZ(100px);
+    background-color: rgba(110, 146, 198, 0.6);
+}
+.e
+{
+    -webkit-transform: rotateX(90deg) translateZ(100px);
+    transform: rotateX(90deg) translateZ(100px);
+    background-color: rgba(110, 146, 198,0.6);
+}
+.f
+{
+    -webkit-transform: rotateX(-90deg) translateZ(100px);
+    transform: rotateX(-90deg) translateZ(100px);
+    background-color: rgba(110, 146, 198,0.6);
+}
+@-webkit-keyframes cube
+{
+    100%{-webkit-transform: rotateY(678deg) rotateZ(740deg) rotateX(-20deg) translateZ(0px);
+    transform: rotateY(678deg) rotateZ(740deg) rotateX(-20deg) translateZ(0px);}
+}
+@keyframes cube
+{
+    100%{-webkit-transform: rotateY(678deg) rotateZ(740deg) rotateX(-20deg) translateZ(0px);
+    transform: rotateY(678deg) rotateZ(740deg) rotateX(-20deg) translateZ(0px);}
+}
+.cube .cube2
+{
+    height: 100px;
+    width: 100px;
+    box-shadow: 0 0 0 0;
+    position: fixed;
+    top: 60px;
+    left: 60px;
+    -webkit-transform: rotateX(-42deg) rotateZ(20deg) rotateY(-20deg) translateZ(0px);
+    transform: rotateX(-42deg) rotateZ(20deg) rotateY(-20deg) translateZ(0px);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-animation: cube2 3s linear infinite;
+    animation: cube2 10s linear infinite;
+}
+.cube2 div
+{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+}
+.g
+{
+    -webkit-transform: rotateX(0) translateZ(50px);
+    transform: rotateX(0) translateZ(50px);
+    background-color: rgba(255,255,255,0.8);
+}
+.h
+{
+    -webkit-transform: rotateX(180deg) translateZ(50px);
+    transform: rotateX(180deg) translateZ(50px);
+    background-color: rgba(255,255,255,0.8);
+}
+.i
+{
+    -webkit-transform: rotateX(90deg) translateZ(50px);
+    transform: rotateX(90deg) translateZ(50px);
+    background-color: rgba(255,255,255,0.8);
+}
+.j
+{
+    -webkit-transform: rotateX(-90deg) translateZ(50px);
+    transform: rotateX(-90deg) translateZ(50px);
+    background-color: rgba(255,255,255,0.8);
+}
+.k
+{
+    -webkit-transform: rotateY(90deg) translateZ(50px);
+    transform: rotateY(90deg) translateZ(50px);
+    background-color: rgba(255,255,255,0.8);
+}
+.l
+{
+    -webkit-transform: rotateY(-90deg) translateZ(50px);
+    transform: rotateY(-90deg) translateZ(50px);
+    background-color: rgba(255,255,255,0.8);
+}
+@-webkit-keyframes cube2
+{
+    100%{-webkit-transform: rotateX(678deg) rotateZ(740deg) rotateY(-20deg) translateZ(0px);
+    transform: rotateX(678deg) rotateZ(740deg) rotateY(-20deg) translateZ(0px);}
+}
+@keyframes cube2
+{
+    100%{-webkit-transform: rotateX(678deg) rotateZ(740deg) rotateY(-20deg) translateZ(0px);
+    transform: rotateX(678deg) rotateZ(740deg) rotateY(-20deg) translateZ(0px);}
+}
+.cube2 .cube3
+{
+    height: 50px;
+    width: 50px;
+    box-shadow: 0 0 0 0;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    -webkit-transform: rotateY(-42deg) rotateZ(20deg) rotateX(-20deg) translateZ(0px);
+    transform: rotateY(-42deg) rotateZ(20deg) rotateX(-20deg) translateZ(0px);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-animation: cube3 2s linear infinite;
+    animation: cube3 5s linear infinite;
+}
+.cube3 div
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+}
+.m
+{
+    -webkit-transform: rotateY(0) translateZ(25px);
+    transform: rotateY(0) translateZ(25px);
+    background-color: rgba(255, 0, 0 ,1);
+}
+.n
+{
+    -webkit-transform: rotateY(180deg) translateZ(25px);
+    transform: rotateY(180deg) translateZ(25px);
+    background-color: rgba(0, 255, 0 ,1);
+}
+.o
+{
+    -webkit-transform: rotateY(90deg) translateZ(25px);
+    transform: rotateY(90deg) translateZ(25px);
+    background-color: rgba(0, 0, 255,1);
+}
+.p
+{
+    -webkit-transform: rotateY(-90deg) translateZ(25px);
+    transform: rotateY(-90deg) translateZ(25px);
+    background-color: rgba(255, 255, 0,1);
+}
+.q
+{
+    -webkit-transform: rotateX(90deg) translateZ(25px);
+    transform: rotateX(90deg) translateZ(25px);
+    background-color: rgba(0, 255, 255,1);
+}
+.r
+{
+    -webkit-transform: rotateX(-90deg) translateZ(25px);
+    transform: rotateX(-90deg) translateZ(25px);
+    background-color: rgba(255, 0, 255,1);
+}
+@-webkit-keyframes cube3
+{
+    100%{-webkit-transform: rotateY(678deg) rotateZ(740deg) rotateX(-20deg) translateZ(0px);
+    transform: rotateY(678deg) rotateZ(740deg) rotateX(-20deg) translateZ(0px);}
+}
+@keyframes cube3
+{
+    100%{-webkit-transform: rotateY(678deg) rotateZ(740deg) rotateX(-20deg) translateZ(0px);
+    transform: rotateY(678deg) rotateZ(740deg) rotateX(-20deg) translateZ(0px);}
+}
+		</style>
+        <br>
+        <br>
+        <br>
+        <center>
+<style>
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4d4d4d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+</style>
+
+<form>
+    <font face="arial">
+        <font color="white">
+            <b>
+    <label for="pswd">Enter password: </label>
+    <input type="password" id="pswd">
+    <font face="arial">
+    <input type="button" value="Submit" onclick="checkPswd();" />
+</form>
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "123";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="index.html";
+        }
+        else{
+            alert("Access Denied : Passwords do not match.");
+        }
+    }
+</script>
+</body>
+</html>
